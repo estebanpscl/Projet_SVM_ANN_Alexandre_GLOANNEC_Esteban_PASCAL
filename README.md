@@ -1,4 +1,4 @@
-##### <center>MASTER 2 ÉCONOMÉTRIE ET STATISTIQUES APPLIQUÉES</center>
+## MASTER 2 ÉCONOMÉTRIE ET STATISTIQUES APPLIQUÉES
 ##### <center>SVM ET RÉSEAUX DE NEURONES</center>
 ##### <center>CLASSIFICATION D'IMAGES DE SPORTS</center>
 ##### <img src="reseaux.jpg" alt="reseaux" width="400"/>
