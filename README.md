@@ -1,7 +1,7 @@
 ## MASTER 2 ÉCONOMÉTRIE ET STATISTIQUES APPLIQUÉES
 ## SVM ET RÉSEAUX DE NEURONES
 ## CLASSIFICATION D'IMAGES DE SPORTS
-##### <img src="reseaux.jpg" alt="reseaux" width="400"/>
+![image](assets/reseaux.jpg)
 ## PAR
 ## ALEXANDRE GLOANNEC
 ## ESTEBAN PASCAL
