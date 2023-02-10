@@ -206,7 +206,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="justify"> Il est important de savoir qu'afin de réaliser une classification multiclass avec une régression logistique, nous avons précisé au sein des paramètres l'argument multi_class = "multinomial". </p>
 
-<p align="justify"> Pour l'ensemble des méthodes, hormis la régression logistique, les paramètres par défaut des modèles ont été utilisés. D'autre part, nous n'avons pas pu mettre en place les méthodes de GridSearch et RandomozidesGridSearch pour notre modélisation. À nouveau, la problématique du temps de calcul de ces méthodes pour nos données est rentré en compte. </p>
+<p align="justify"> Pour l'ensemble des méthodes, hormis la régression logistique, les paramètres par défaut des modèles ont été utilisés. D'autre part, nous n'avons pas pu mettre en place les méthodes de GridSearch et RandomozidesGridSearch pour notre modélisation. À nouveau, la problématique du temps de calcul de ces méthodes pour nos données est rentrée en compte. </p>
     
 # V. Rééchantillonage des données
 
