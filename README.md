@@ -204,5 +204,15 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="justify"> La régression logistique est une technique d'analyse de données qui utilise les mathématiques pour trouver les relations entre deux facteurs de données. Elle utilise ensuite cette relation pour prédire la valeur de l'un de ces facteurs en fonction de l'autre. La régression logistique est une technique importante dans le domaine de l'intelligence artificielle et du machine learning. Les modèles de régression logistique peuvent traiter de grands volumes de données à grande vitesse, car ils nécessitent moins de capacité de calcul, comme la mémoire et la puissance de traitement. </p>  
 
+# V. Rééchantillonage des données
+
+<p align="justify"> Précédemment, nous avons vu que certaines catégories étaient malgré tout sous-représentées vis-à-vis de certaines.  Nous allons donc procéder à de l'undersumpling afin d'améliorer potentiellement la qualité de nos modèles. Et voici donc au sein de la figure 4 la nouvelle répartition après Undersampling de nos données : </p>  
+
+<p align="center"> Figure 4 - Nouvelle répartition après Undersampling de nos données </p>
+<p align="center">
+    <img width="400" src="https://user-images.githubusercontent.com/118008489/218063576-44bb812e-be12-427d-9c46-0c95c37cf5b0.png" alt="rugby">
+</p>
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
 
 
