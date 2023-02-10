@@ -202,8 +202,12 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 ### - Régression Logistique 
 
-<p align="justify"> La régression logistique est une technique d'analyse de données qui utilise les mathématiques pour trouver les relations entre deux facteurs de données. Elle utilise ensuite cette relation pour prédire la valeur de l'un de ces facteurs en fonction de l'autre. La régression logistique est une technique importante dans le domaine de l'intelligence artificielle et du machine learning. Les modèles de régression logistique peuvent traiter de grands volumes de données à grande vitesse, car ils nécessitent moins de capacité de calcul, comme la mémoire et la puissance de traitement. </p>  
+<p align="justify"> La régression logistique est une technique d'analyse de données qui utilise les mathématiques pour trouver les relations entre deux facteurs de données. Elle utilise ensuite cette relation pour prédire la valeur de l'un de ces facteurs en fonction de l'autre. La régression logistique est une technique importante dans le domaine de l'intelligence artificielle et du machine learning. Les modèles de régression logistique peuvent traiter de grands volumes de données à grande vitesse, car ils nécessitent moins de capacité de calcul, comme la mémoire et la puissance de traitement. </p>   
 
+<p align="justify"> Il est important de savoir qu'afin de réaliser une classification multiclass avec une régression logistique, nous avons précisé au sein des paramètres l'argument multi_class = "multinomial". </p>
+
+<p align="justify"> Pour l'ensemble des méthodes, hormis la régression logistique, les paramètres par défaut des modèles ont été utilisés. D'autre part, nous n'avons pas pu mettre en place les méthodes de GridSearch et RandomozidesGridSearch pour notre modélisation. À nouveau, la problématique du temps de calcul de ces méthodes pour nos données est rentré en compte. </p>
+    
 # V. Rééchantillonage des données
 
 <p align="justify"> Précédemment, nous avons vu que certaines catégories étaient malgré tout sous-représentées vis-à-vis de certaines.  Nous allons donc procéder à de l'undersumpling afin d'améliorer potentiellement la qualité de nos modèles. Le sous-échantillonnage implique d'introduire un biais pour sélectionner plus d'échantillons d'une classe que d'une autre, afin de compenser un déséquilibre déjà présent dans les données ou susceptible de se développer si un échantillon purement aléatoire était prélevé. </p>  
@@ -221,7 +225,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="justify"> Ci-dessous, au sein du tableau 2, nous observons la nouvelle répartition du nombre d'images au sein de chacune des catégories après undersampling: </p>
 
-<p align="center"> Tableau 1 - Répartition du nombre d'images au sein de chacune des catégories après undersampling </p>
+<p align="center"> Tableau 2 - Répartition du nombre d'images au sein de chacune des catégories après undersampling </p>
 
 <div align="center">
     
@@ -235,6 +239,39 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 | cricket_ball         | 340           |
 | football             | 340           |
 | golf_ball            | 340           |
+| hockey_ball          | 340           |
+| hockey_puck          | 340           |
+| rugby_ball           | 340           |
+| shuttlecock          | 340           |
+| table_tennis_ball    | 340           |
+| volleyball           | 340           |
+    
+</div>  
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
+
+<p align="justify"> Sans oublier que nous séparons dans ce cas ci-présent aussi notre jeu train en deux nouveaux jeux de données pour la modélisation : 80% du jeu de données en jeu train et 20% du jeu de données en jeu test. </p>  
+
+# VI. Interprétation du meilleur modèle
+
+<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein du tableau 4, c'est le nombre d'erreur réalisé pour chaque modèle comme image mal prédite pour chaque catégorie que nous observons. </p>
+
+<p align="center"> Tableau 3 - Qualité de prévision de l'ensemble des modèles </p>
+
+<div align="center">
+    
+| Modèles                               | Avant rééchantillonage  | Après rééchantillonage |
+| -------------                         | ------------- |
+| OneVSRestClassifier (SVC)
+| OneVsRestClassifier (LinearSVC)
+| OneVsRestClassifier (SGDClassifier)     | 340           |
+| OneVSOneClassifier (SVC)             | 340           |
+| OneVsOneClassifier (LinearSVC)           | 340           |
+| OneVsOneClassifier (SGDClassifier)        | 340           |
+| Arbre de décision         | 340           |
+| Random Forest         | 340           |
+| Ridge Classifier             | 340           |
+| Régression Logistique            | 340           |
 | hockey_ball          | 340           |
 | hockey_puck          | 340           |
 | rugby_ball           | 340           |
