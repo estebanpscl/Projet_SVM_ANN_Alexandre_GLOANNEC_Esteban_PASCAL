@@ -145,8 +145,6 @@ C'est pour cette raison que nous sommes directement passé à notre étape de mo
 
 <p align="justify"> Nous introduirons tout d'abord chaque méthode avant de présenter à la fin de cette partie un tableau récapitulatif résumant pour chacune d'entre elles à la fois, la qualité de prévision du modèle, ainsi que le nombre de fois ou le modèle prédit d'une mauvaise manière les images pour chaque catégorie </p>    
 
-## Modélisation sans rééchantillonage
-
 ### - Partie OVR 
 
  * OneVsRestClassifier (SVC)
@@ -172,4 +170,39 @@ Cependant, nous avons souhaité tester d'autres modèles que ceux vus en cous. P
 
  ### - Arbre de décision
  
- <p align="justify"> En intelligence artificielle, plus précisément en apprentissage automatique, le perceptron multicouche (multilayer perceptron, MLP) est un type de réseau neuronal artificiel organisé en plusieurs couches. L'information circule de la couche d'entrée vers la couche de sortie uniquement : il s'agit donc d'un réseau à propagation directe (feedforward). Chaque couche est constituée d'un nombre variable de neurones, les neurones de la dernière couche (dite « de sortie ») étant les sorties du système global. </p>  
+ <p align="justify"> Un arbre de décision est un outil d'aide à la décision représentant un ensemble de choix sous la forme graphique d'un arbre. Les différentes décisions possibles sont situées aux extrémités des branches (les « feuilles » de l'arbre), et sont atteintes en fonction de décisions prises à chaque étape. L'arbre de décision est un outil utilisé dans des domaines variés tels que la sécurité, la fouille de données, la médecine, etc. Il a l'avantage d'être lisible et rapide à exécuter. Il s'agit de plus d'une représentation calculable automatiquement par des algorithmes d'apprentissage supervisé. </p>  
+ 
+### - GradientBoostingClassifier
+
+<p align="justify"> Le gradient boosting est un modèle ensembliste de boosting utilisant la descente de gradient pour optimiser une fonction de perte. Cette descente est utilisée pour le calcul des résidus des individus, lors de la construction du modèle suivant.  
+Cette méthode est implémentée dans la librairie scikit-learn : GradientBoostingRegressor et GradientBoostingClassifier. </p>  
+
+<p align="justify"> Au sujet du modèle GradientBoostingClassifier, celui-ci a nécessité un nombre conséquent de temps de calcul rien qu'avec 3 catégories afin de tester le modèle. C'est pourquoi nous n'avons pu malheureusement l'appliquer à l'ensemble de nos catégories et l'avons alors mis de côté. </p>  
+
+### - Random Forest
+
+<p align="justify"> Le Random Forest est un modèle ensembliste basé sur la construction de multiples arbres de décision (CART).
+Chaque arbre est construit à partir d’un échantillon aléatoire avec remise des individus et des variables. Lors d’une classification, la prédiction finale est la modalité majoritairement prédite. </p>  
+    
+<p align="justify"> Les avantages sont les suivants : 
+    
+ * Accepte les variables qualitatives et quantitatives  
+ * Pas besoin de vérifier des hypothèses de normalité et de variance  
+ * Il répond aux problèmes de classification et régression  
+ * Modèle relativement puissant sur des problèmes de modélisation complexe </p>   
+
+<p align="justify"> Tandis que les inconvénients sont :  
+    
+ * Difficilement interprétable  
+ * Attention au sur-apprentissage </p>   
+
+### - Ridge Classifier
+
+<p align="justify"> En apprentissage automatique, la classification ridge est une technique utilisée pour analyser les modèles discriminants linéaires. C'est une forme de régularisation qui pénalise les coefficients du modèle pour éviter le surajustement. Le surajustement est un problème courant dans l'apprentissage automatique qui se produit lorsqu'un modèle est trop complexe et capture le bruit dans les données au lieu du signal sous-jacent. Cela peut conduire à de mauvaises performances de généralisation sur de nouvelles données. La classification Ridge résout ce problème en ajoutant un terme de pénalité à la fonction de coût qui décourage la complexité. Il en résulte un modèle plus apte à généraliser à de nouvelles données.  </p>  
+
+### - Régression Logistique 
+
+<p align="justify"> La régression logistique est une technique d'analyse de données qui utilise les mathématiques pour trouver les relations entre deux facteurs de données. Elle utilise ensuite cette relation pour prédire la valeur de l'un de ces facteurs en fonction de l'autre. La régression logistique est une technique importante dans le domaine de l'intelligence artificielle et du machine learning. Les modèles de régression logistique peuvent traiter de grands volumes de données à grande vitesse, car ils nécessitent moins de capacité de calcul, comme la mémoire et la puissance de traitement. </p>  
+
+
+
