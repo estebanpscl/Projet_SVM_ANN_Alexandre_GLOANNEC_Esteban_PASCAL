@@ -256,7 +256,8 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 # VI. Interprétation du meilleur modèle
 
-<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. Enfin, les tableaux 6 et 7 montrent les matrices de confusion obtenues pour la méthode Random Forest avant et après rééchantillonage. </p>
+<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Notons que nous ne pouvons comparer les qualités de prévision entre les deux méthodes puisque l'une d'entre elles contient plus de catégories que l'autre. Cependant, nous avons du procéder de cette manière avec la problématique d'a minima 5000 observations, puisque d'abord nous ne pouns observer tutes les catégories du fait de fait de la coplexité de nos modèles
+    Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. Enfin, les tableaux 6 et 7 montrent les matrices de confusion obtenues pour la méthode Random Forest avant et après rééchantillonage. </p>
 
 <p align="center"> Tableau 3 - Qualité de prévision de l'ensemble des modèles </p>
 
@@ -340,3 +341,4 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
 
+<p align="justify">  </p>
