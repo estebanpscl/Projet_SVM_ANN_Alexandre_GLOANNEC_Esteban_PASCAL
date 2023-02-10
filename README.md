@@ -206,13 +206,16 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 # V. Rééchantillonage des données
 
-<p align="justify"> Précédemment, nous avons vu que certaines catégories étaient malgré tout sous-représentées vis-à-vis de certaines.  Nous allons donc procéder à de l'undersumpling afin d'améliorer potentiellement la qualité de nos modèles. Et voici donc au sein de la figure 4 la nouvelle répartition après Undersampling de nos données : </p>  
+<p align="justify"> Précédemment, nous avons vu que certaines catégories étaient malgré tout sous-représentées vis-à-vis de certaines.  Nous allons donc procéder à de l'undersumpling afin d'améliorer potentiellement la qualité de nos modèles. Le sous-échantillonnage implique d'introduire un biais pour sélectionner plus d'échantillons d'une classe que d'une autre, afin de compenser un déséquilibre déjà présent dans les données ou susceptible de se développer si un échantillon purement aléatoire était prélevé. </p>  
+
+<p align="justify"> À noter que nous n'avons pas procédé également à de l'oversampling car cette méthode prenait beaucoup trop de temps de calcul dans le cas de notre analyse. C'est la raison pour laquelle nous avons concentré nos efforts sur l'undersampling. </p>  
+
+<p align="justify">  Voici donc au sein de la figure 4 la nouvelle répartition après Undersampling de nos données : </p>    
 
 <p align="center"> Figure 4 - Nouvelle répartition après Undersampling de nos données </p>
 <p align="center">
-    <img width="400" src="https://user-images.githubusercontent.com/118008489/218063576-44bb812e-be12-427d-9c46-0c95c37cf5b0.png" alt="rugby">
+    <img width="400" src="https://user-images.githubusercontent.com/118008489/218097925-50b38942-c9c1-494f-883a-e25031580641.png" alt="undersampling">
 </p>
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
-
 
