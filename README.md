@@ -27,8 +27,9 @@ Source des données : https://www.kaggle.com/datasets/samuelcortinhas/sports-bal
 
 <p align="justify"> Nous observons ci-dessous à titre d'exemple quelques images ayant pu être visualisées pour 3 catégories de sports différents de manière aléatoire : </p>
 
-**Figure 1 - Image issue de la catégorie baseball**
+<p align="center"> Figure 1 - Image issue de la catégorie baseball </p>
 <p align="center">
-    <img width="400" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCUbX6dp50ELEEyOaKdvFkpucInSMbYoaL2A&usqp=CAU" alt="reseaux">
+    <img width="400" src="https://user-images.githubusercontent.com/118008489/218047372-31b382ea-d828-4000-a840-8f6fadec111d.png" alt="baseball">
 </p>
-**Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python**
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
