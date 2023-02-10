@@ -256,7 +256,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 # VI. Interprétation du meilleur modèle
 
-<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. </p>
+<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. Enfin, les tableaux 6 et 7 montrent les matrices de confusion obtenues pour la méthode Random Forest avant et après rééchantillonage. </p>
 
 <p align="center"> Tableau 3 - Qualité de prévision de l'ensemble des modèles </p>
 
