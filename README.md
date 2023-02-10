@@ -115,7 +115,7 @@ C'est pour cette raison que nous sommes directement passé à notre étape de mo
 
 <p align="justify"> Nous allons maintenant présenter la modélisation et les résultats obtenus en termes de performance pour chacun de nos modèles choisis dans cette étude avec nos catégories retenues. À noter que nous présenterons pour chacun de nos modèles à la fois les résultats de nos modélisations obtenus sans rééchantillonage et avec rééchantillonage du jeu de données. </p>  
 
-<p align="justify"> Concernant les méthodes que nous avons employées durant cette étude de cas, voici l'ordre dans lequel celles-ci ont été mises en place : </p>  
+<p align="justify"> Concernant les méthodes que nous avons employé durant cette étude de cas, voici l'ordre dans lequel celles-ci ont été mises en place : </p>  
 
 ## Méthodes employées :
     
@@ -142,7 +142,8 @@ C'est pour cette raison que nous sommes directement passé à notre étape de mo
 
    * Application des modèles à l’échantillon test.
    * Comparaison de la performance des modèles (Matrice de confusion, Accuracy).
-   * Interprétation de notre meilleur modèle.
+
+<p align="justify"> Nous introduirons tout d'abord chaque méthode avant de présenter à la fin de cette partie un tableau récapitulatif résumant pour chacune d'entre elles à la fois, la qualité de prévision du modèle, ainsi que le nombre de fois ou le modèle prédit d'une mauvaise manière les images pour chaque catégorie </p>    
 
 ## Modélisation sans rééchantillonage
 
