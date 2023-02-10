@@ -250,11 +250,13 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
+<p align="center">  Cette fois-ci le nobre de catégories est supérieure étant donné qu'avec la procédure d'Undersapling nous ne rencontrons plus de problème quant à la richesse de notre base de données. </p>
+    
 <p align="justify"> Sans oublier que nous séparons dans ce cas ci-présent aussi notre jeu train en deux nouveaux jeux de données pour la modélisation : 80% du jeu de données en jeu train et 20% du jeu de données en jeu test. </p>  
 
 # VI. Interprétation du meilleur modèle
 
-<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein du tableau 4, c'est le nombre d'erreur réalisé pour chaque modèle comme image mal prédite pour chaque catégorie que nous observons. </p>
+<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein du tableau 4 et 5, c'est le nombre d'erreur réalisé pour chaque modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. </p>
 
 <p align="center"> Tableau 3 - Qualité de prévision de l'ensemble des modèles </p>
 
@@ -277,24 +279,22 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
-<p align="center"> Tableau 4 - Nombre d'erreur réalisé pour chaque modèle comme image mal prédite pour chaque catégorie </p>
+<p align="center"> Tableau 4 - Nombre d'erreur réalisé pour chaque modèle avant rééchantillonage comme image mal prédite pour chaque catégorie </p>
 
 <div align="center">
     
-|    Avant rééchantillonage                                                                                                                      |
-| ---------------------------------------------------------------------------------------------------------------------------------------------- |
-|              | OVR(SVC) | OVR(LinearSVC) | OVR(SGDClassifier) | OVO(SVC) | OVO(LinearsSVC) | OVO(SGDCClassifier | DT | RF | RC | RL Multiclass |
-| ------------ | -------- | -------------- | ------------------ | -------- | --------------- | ------------------ | -- | -- | -- | ------------- |
-| basketball           | 49,16%                  | 44,66%                 |
-| billiard_ball     | 39,23%                  | 34,14%                 |
-| cricket_ball | 29,79%                  | 20,25%                 |
-| football           | 41,79%                  | 34,72%                 |    
-| golf_ball      | 41,79%                  | 37,28%                 |
-| hockey_puck  | 31,66%                  | 26,83%                 |
-| rugby_ball                   | 32,35%                  | 29,16%                 |
-| shuttlecock                       | 51,23%                  | 47,66%                 |
-| table_tennis_ball                    | 36,97%                  | 31,94%                 |  
-| volleyball    | 26,70%                  | 25,95%                 |
+|                  | OVR(SVC) | OVR(LinearSVC) | OVR(SGDClassifier) | OVO(SVC) | OVO(LinearsSVC) | OVO(SGDCClassifier | DT | RF | RC | RL Multiclass |
+| ------------     | -------- | -------------- | ------------------ | -------- | --------------- | ------------------ | -- | -- | -- | ------------- |
+| basketball       | 46       | 51             | 66                 |  58        43 46
+| billiard_ball    | 54       | 87             | 85                 |  55        8139
+| cricket_ball     | 38       | 55             | 52                 |  49        5536
+| football         | 77       | 92             | 82                 |  75        8769
+| golf_ball        | 69       | 74             | 103                |  70        7060
+| hockey_puck      | 46       | 47             | 64                 |  54        4943
+| rugby_ball       | 43       | 55             | 80                 |  59        5550
+| shuttlecock      | 34       | 38             | 20                 |  42        3938
+| table_tennis_ball| 55       | 87             | 86                 |  62        5451
+| volleyball       | 55       | 62             | 76                 |  68        5964
     
 </div>  
 
