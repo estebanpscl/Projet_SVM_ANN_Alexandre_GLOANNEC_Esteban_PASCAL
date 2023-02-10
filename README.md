@@ -219,3 +219,29 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
 
+<p align="justify"> Ci-dessous, au sein du tableau 2, nous observons la nouvelle répartition du nombre d'images au sein de chacune des catégories après undersampling: </p>
+
+<p align="center"> Tableau 1 - Répartition du nombre d'images au sein de chacune des catégories après undersampling </p>
+
+<div align="center">
+    
+| Catgéories           | Images        |
+| -------------        | ------------- |
+| american_football    | 340           |
+| baseball             | 340           |
+| basketball           | 340           |
+| billiard_ball        | 340           |
+| bowling_ball         | 340           |
+| cricket_ball         | 340           |
+| football             | 340           |
+| golf_ball            | 340           |
+| hockey_ball          | 340           |
+| hockey_puck          | 340           |
+| rugby_ball           | 340           |
+| shuttlecock          | 340           |
+| table_tennis_ball    | 340           |
+| volleyball           | 340           |
+    
+</div>  
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
