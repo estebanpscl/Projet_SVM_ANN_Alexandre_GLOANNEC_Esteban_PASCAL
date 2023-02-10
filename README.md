@@ -256,7 +256,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 # VI. Interprétation du meilleur modèle
 
-<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein du tableau 4 et 5, c'est le nombre d'erreur réalisé pour chaque modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. </p>
+<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. </p>
 
 <p align="center"> Tableau 3 - Qualité de prévision de l'ensemble des modèles </p>
 
@@ -279,22 +279,47 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
-<p align="center"> Tableau 4 - Nombre d'erreur réalisé pour chaque modèle avant rééchantillonage comme image mal prédite pour chaque catégorie </p>
+<p align="center"> Tableau 4 - Nombre d'erreur réalisé pour le modèle Random Forest avant rééchantillonage comme image mal prédite pour chaque catégorie </p>
 
 <div align="center">
     
-|                  | OVR(SVC) | OVR(LinearSVC) | OVR(SGDClassifier) | OVO(SVC) | OVO(LinearsSVC) | OVO(SGDCClassifier | DT | RF | RC | RL Multiclass |
-| ------------     | -------- | -------------- | ------------------ | -------- | --------------- | ------------------ | -- | -- | -- | ------------- |
-| basketball       | 46       | 51             | 66                 |  58        43 46
-| billiard_ball    | 54       | 87             | 85                 |  55        8139
-| cricket_ball     | 38       | 55             | 52                 |  49        5536
-| football         | 77       | 92             | 82                 |  75        8769
-| golf_ball        | 69       | 74             | 103                |  70        7060
-| hockey_puck      | 46       | 47             | 64                 |  54        4943
-| rugby_ball       | 43       | 55             | 80                 |  59        5550
-| shuttlecock      | 34       | 38             | 20                 |  42        3938
-| table_tennis_ball| 55       | 87             | 86                 |  62        5451
-| volleyball       | 55       | 62             | 76                 |  68        5964
+|                  | Random Forest |
+| ------------     | ------------- |
+| basketball       | 46            |
+| billiard_ball    | 39            |
+| cricket_ball     | 36            |           
+| football         | 69            |
+| golf_ball        | 60            |
+| hockey_puck      | 43            | 
+| rugby_ball       | 50            |
+| shuttlecock      | 38            |
+| table_tennis_ball| 51            |
+| volleyball       | 64            |
+    
+</div>  
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
+
+<p align="center"> Tableau 5 - Nombre d'erreur réalisé pour le modèle Random Forest après rééchantillonage comme image mal prédite pour chaque catégorie </p>
+
+<div align="center">
+    
+|                  | Random Forest |
+| ------------     | ------------- |
+| american_football| 53            |
+| baseball         | 61            |
+| basketball       | 32            |
+| billiard_ball    | 56            |
+| bowling_ball     | 48            |
+| cricket_ball     | 40            |
+| football         | 61            |
+| golf_ball        | 61            |
+| hockey_ball      | 52            |
+| hockey_puck      | 49            |
+| rugby_ball       | 57            |
+| shuttlecock      | 33            |
+| table_tennis_ball| 54            |
+| volleyball       | 65            |
     
 </div>  
 
