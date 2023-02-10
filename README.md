@@ -262,16 +262,16 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
     
 | Modèles                             | Avant rééchantillonage  | Après rééchantillonage |
 | -------------                       | -------------           | -------------          |
-| OneVSRestClassifier (SVC)           |                         |                        |
-| OneVsRestClassifier (LinearSVC)     |                         |                        |
-| OneVsRestClassifier (SGDClassifier) | 340                     |                        |
-| OneVSOneClassifier (SVC)            | 340                     |                        |    
-| OneVsOneClassifier (LinearSVC)      | 340                     |                        |
-| OneVsOneClassifier (SGDClassifier)  | 340                     |                        |
-| Arbre de décision                   |                         |                        |
-| Random Forest                       |                         |                        |
-| Ridge Classifier                    | 340                     |                        |  
-| Régression Logistique Multiclass    | 340                     |                        |
+| OneVSRestClassifier (SVC)           | 49,16%                  | 44,66%                 |
+| OneVsRestClassifier (LinearSVC)     | 39,23%                  | 34,14%                 |
+| OneVsRestClassifier (SGDClassifier) | 29,79%                  | 20,25%                 |
+| OneVSOneClassifier (SVC)            | 41,79%                  | 34,72%                 |    
+| OneVsOneClassifier (LinearSVC)      | 41,79%                  | 37,28%                 |
+| OneVsOneClassifier (SGDClassifier)  | 31,66%                  | 26,83%                 |
+| Arbre de décision                   | 32,35%                  | 29,16%                 |
+| Random Forest                       | 51,23%                  | 47,66%                 |
+| Ridge Classifier                    | 36,97%                  | 31,94%                 |  
+| Régression Logistique Multiclass    | 26,70%                  | 25,95                  |
     
 </div>  
 
