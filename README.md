@@ -271,8 +271,32 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 | Arbre de décision                   | 32,35%                  | 29,16%                 |
 | Random Forest                       | 51,23%                  | 47,66%                 |
 | Ridge Classifier                    | 36,97%                  | 31,94%                 |  
-| Régression Logistique Multiclass    | 26,70%                  | 25,95                  |
+| Régression Logistique Multiclass    | 26,70%                  | 25,95%                 |
     
 </div>  
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
+
+<p align="center"> Tableau 4 - Nombre d'erreur réalisé pour chaque modèle comme image mal prédite pour chaque catégorie </p>
+
+<div align="center">
+    
+|    Avant rééchantillonage                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------------------------------------------- |
+|              | OVR(SVC) | OVR(LinearSVC) | OVR(SGDClassifier) | OVO(SVC) | OVO(LinearsSVC) | OVO(SGDCClassifier | DT | RF | RC | RL Multiclass |
+| ------------ | -------- | -------------- | ------------------ | -------- | --------------- | ------------------ | -- | -- | -- | ------------- |
+| basketball           | 49,16%                  | 44,66%                 |
+| billiard_ball     | 39,23%                  | 34,14%                 |
+| cricket_ball | 29,79%                  | 20,25%                 |
+| football           | 41,79%                  | 34,72%                 |    
+| golf_ball      | 41,79%                  | 37,28%                 |
+| hockey_puck  | 31,66%                  | 26,83%                 |
+| rugby_ball                   | 32,35%                  | 29,16%                 |
+| shuttlecock                       | 51,23%                  | 47,66%                 |
+| table_tennis_ball                    | 36,97%                  | 31,94%                 |  
+| volleyball    | 26,70%                  | 25,95%                 |
+    
+</div>  
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
+
