@@ -250,14 +250,13 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
-<p align="center">  Cette fois-ci le nobre de catégories est supérieure étant donné qu'avec la procédure d'Undersapling nous ne rencontrons plus de problème quant à la richesse de notre base de données. </p>
+<p align="center">  Cette fois-ci le nombre de catégories est supérieure étant donné qu'avec la procédure d'Undersampling nous ne rencontrons plus de problème quant à la richesse de notre base de données. </p>
     
 <p align="justify"> Sans oublier que nous séparons dans ce cas ci-présent aussi notre jeu train en deux nouveaux jeux de données pour la modélisation : 80% du jeu de données en jeu train et 20% du jeu de données en jeu test. </p>  
 
 # VI. Interprétation du meilleur modèle
 
-<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Notons que nous ne pouvons comparer les qualités de prévision entre les deux méthodes puisque l'une d'entre elles contient plus de catégories que l'autre. Cependant, nous avons du procéder de cette manière avec la problématique d'a minima 5000 observations, puisque d'abord nous ne pouns observer tutes les catégories du fait de fait de la coplexité de nos modèles
-    Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. Enfin, les tableaux 6 et 7 montrent les matrices de confusion obtenues pour la méthode Random Forest avant et après rééchantillonage. </p>
+<p align="justify"> Enfin, passons au récapitulatif des résultats en termes de performances de l'ensemble des modèles. Nous représentons au sein du tableau 3 la qualité de prévision de l'ensemble des modèles. Notons que nous ne pouvons comparer les qualités de prévision entre les deux méthodes. Tandis qu'au sein des tableaux 4 et 5, c'est le nombre d'erreur réalisé pour le meilleur modèle, avant et après rééchantillonage, comme image mal prédite pour chaque catégorie que nous observons. Enfin, les tableaux 6 et 7 montrent les matrices de confusion obtenues pour la méthode Random Forest avant et après rééchantillonage. </p>
 
 <p align="center"> Tableau 3 - Qualité de prévision de l'ensemble des modèles </p>
 
@@ -341,4 +340,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
 
-<p align="justify">  </p>
+<p align="justify"> Pour conclure cette analyse concernant la classification d'images de balles de sports, il s'avère que le meilleur modèle obtenu pour classifier ces dernières de manière optimale s'avère être le modèle Random Forest, avant et après rééchantillonage, avec une qualité de prévision, respectivement, de 51,23% et 47,66%. Ce modèle prédit donc correctement les images de balles de sports pour chacune des catégories dans environ 50% des cas. </p>  
+
+<p align="justify"> Au sujet du nombre d'erreur réalisé pour le modèle Random Forest avant rééchantillonage comme image mal prédite pour chaque catégorie, le modèle réalise le minimum d'erreur pour les catégories cricket_ball et shuttlecock, avec 36 erreurs pour l'une contre 38 erreurs pour l'autre. À l'inverse, le modèle réalise le maximum d'erreur pour les catégories football et volleyball, avec 69 erreurs pour l'une contre 64 erreurs pour l'autre.</p>  
+<p align="justify"> Par ailleurs, pour le nombre d'erreur réalisé pour le modèle Random Forest après rééchantillonage comme image mal prédite pour chaque catégorie, le modèle réalise le minimum d'erreur pour les catégories basketball et shuttlecock, avec 32 erreurs pour l'une contre 33 erreurs pour l'autre. À l'inverse, le modèle réalise le maximum d'erreur pour les catégories baseball, football, golfball et volleyball avec 61 erreurs pour les 3 première contre 65 erreurs pour la dernière.</p>  
