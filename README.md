@@ -332,4 +332,11 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
 
+<p align="center"> Tableau 7 - Matrice de confusion du modèle Random Forest après rééchantillonage </p>
+<p align="center">
+    <img width="800" src="https://user-images.githubusercontent.com/118008489/218125518-3d0ad316-23d3-4ff2-92f4-60af366d8146.png" alt="matrice1">
+    <img width="400" src="https://user-images.githubusercontent.com/118008489/218125644-c677a28e-ccea-4b08-b619-c13ab8709e8d.png" alt="matrice2">
+</p>
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
 
