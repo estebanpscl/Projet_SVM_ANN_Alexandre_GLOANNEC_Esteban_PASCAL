@@ -136,7 +136,7 @@ C'est pour cette raison que nous sommes directement passé à notre étape de mo
    ### - GradientBoostingClassifier
    ### - Random Forest
    ### - Ridge Classifier
-   ### - Régression Logistique
+   ### - Régression Logistique Multiclass
 
 <p align="justify"> Et voici la démarche suivie pour cette partie concernant la modélisation : </p>  
 
@@ -200,7 +200,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="justify"> En apprentissage automatique, la classification ridge est une technique utilisée pour analyser les modèles discriminants linéaires. C'est une forme de régularisation qui pénalise les coefficients du modèle pour éviter le surajustement. Le surajustement est un problème courant dans l'apprentissage automatique qui se produit lorsqu'un modèle est trop complexe et capture le bruit dans les données au lieu du signal sous-jacent. Cela peut conduire à de mauvaises performances de généralisation sur de nouvelles données. La classification Ridge résout ce problème en ajoutant un terme de pénalité à la fonction de coût qui décourage la complexité. Il en résulte un modèle plus apte à généraliser à de nouvelles données.  </p>  
 
-### - Régression Logistique 
+### - Régression Logistique Multiclass
 
 <p align="justify"> La régression logistique est une technique d'analyse de données qui utilise les mathématiques pour trouver les relations entre deux facteurs de données. Elle utilise ensuite cette relation pour prédire la valeur de l'un de ces facteurs en fonction de l'autre. La régression logistique est une technique importante dans le domaine de l'intelligence artificielle et du machine learning. Les modèles de régression logistique peuvent traiter de grands volumes de données à grande vitesse, car ils nécessitent moins de capacité de calcul, comme la mémoire et la puissance de traitement. </p>   
 
@@ -260,24 +260,18 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <div align="center">
     
-| Modèles                               | Avant rééchantillonage  | Après rééchantillonage |
-| -------------                         | ------------- |
-| OneVSRestClassifier (SVC)
-| OneVsRestClassifier (LinearSVC)
-| OneVsRestClassifier (SGDClassifier)     | 340           |
-| OneVSOneClassifier (SVC)             | 340           |
-| OneVsOneClassifier (LinearSVC)           | 340           |
-| OneVsOneClassifier (SGDClassifier)        | 340           |
-| Arbre de décision         | 340           |
-| Random Forest         | 340           |
-| Ridge Classifier             | 340           |
-| Régression Logistique            | 340           |
-| hockey_ball          | 340           |
-| hockey_puck          | 340           |
-| rugby_ball           | 340           |
-| shuttlecock          | 340           |
-| table_tennis_ball    | 340           |
-| volleyball           | 340           |
+| Modèles                             | Avant rééchantillonage  | Après rééchantillonage |
+| -------------                       | -------------           | -------------          |
+| OneVSRestClassifier (SVC)           |                         |                        |
+| OneVsRestClassifier (LinearSVC)     |                         |                        |
+| OneVsRestClassifier (SGDClassifier) | 340                     |                        |
+| OneVSOneClassifier (SVC)            | 340                     |                        |    
+| OneVsOneClassifier (LinearSVC)      | 340                     |                        |
+| OneVsOneClassifier (SGDClassifier)  | 340                     |                        |
+| Arbre de décision                   |                         |                        |
+| Random Forest                       |                         |                        |
+| Ridge Classifier                    | 340                     |                        |  
+| Régression Logistique Multiclass    | 340                     |                        |
     
 </div>  
 
