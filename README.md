@@ -60,4 +60,20 @@ Afin de régler ces problémes, nous avons donc procédé d'une autre manière p
 
 <p align="justify"> Ci-dessous, au sein du tableau 1, nous pouvons tout de même observer la répartition du nombre d'images au sein de chacune des catégories : </p>
 
+<p align="center"> Tableau 1 - Répartition du nombre d'images au sein de chacune des catégories </p>
+
+| Catgéories           | Images        |
+| -------------        | ------------- |
+| basketball           | 340           |
+| billiard_ball        | 646           |
+| cricket_ball         | 581           |
+| football             | 604           |
+| gol_ball             | 549           |
+| hockey_puck          | 690           |
+| rugby_ball           | 493           |
+| shuttlecock          | 429           |
+| table_tennis_ball    | 620           |
+| volleyball           | 432           |
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
