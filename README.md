@@ -81,3 +81,64 @@ Afin de régler ces problémes, nous avons donc procédé d'une autre manière p
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
+<p align="justify">  La répartition des images présentes au sein de chaque catégorie est sensiblement égale entre chaque catégorie. Ainsi, un rééchantillonage de notre jeu de données n'est a priori pas nécessaire, mais par souci d'analyse approfondie, nos modélisations, qui seront présentées dans la partie suivante, seront à la fois réalisées avec et sans rééchantillonage de notre jeu de données.  </p>  
+
+# II. Data Preparation
+
+## Anayse du jeu de données
+
+*   Analyse des variables (Variable d'intérêt / Variables explicatives)
+*   Identification des valeurs manquantes
+*   Identification et correction des outliers
+
+## Nettoyage du jeu de données
+
+*   Imputation de valeurs manquantes 
+
+## Standardisation du jeu de données
+
+<p align="justify"> Étant donné notre jeu de données composé d'images à classifier, l'ensemble des étapes énoncées ci-dessous au sein de la partie consacrée à la préparation des données n'ont pas été / pu être réalisées. Le cas échéant, celles-ci auraient du être développées de manière rigoureuse.
+C'est pour cette raison que nous sommes directement passé à notre étape de modélisation. </p>  
+
+# III. Séparation de notre jeu de données train
+
+<p align="justify"> La validation croisée est une technique d’apprentissage supervisé pour vérifier la fiabilité d’un modèle. </p>  
+
+<p align="justify"> Ici nous utlisons la validation croisée Hold Out pour séparer notre jeu train en deux nouvelles bases : </p>  
+    
+<p align="justify"> - Un échantillon d’apprentissage pour entraîner les paramètres du modèle. </p> 
+<p align="justify"> - Un échantillon de validation pour vérifier la déviance du modèle. </p> 
+
+<p align="justify"> Le split du jeu de données s'est effectué de la manière suivante : 80% du jeu de données en jeu train et 20% du jeu de données en jeu test. </p>  
+
+# IV. Modélisation
+
+<p align="justify"> Nous allons maintenant présenter la modélisation et les résultats obtenus en termes de performance pour chacun de nos modèles choisis dans cette étude avec nos catégories retenues. À noter que nous présenterons pour chacun de nos modèles à la fois les résultats de nos modélisations obtenus sans rééchantillonage et avec rééchantillonage du jeu de données. </p>  
+
+## Méthodes employées :
+    
+   ### - Partie OVR :
+    
+   * OneVSRestClassifier (SVC)
+   * OneVsRestClassifier (LinearSVC)
+   * OneVsRestClassifier (SGDClassifier) 
+    
+   ### - Partie OVO :
+    
+   * OneVsOneClassifier (SVC)
+   * OneVsOneClassifier (LinearSVC)
+   * OneVsOneClassifier (SGDClassifier) 
+
+   ### - MLP avec keras
+   ### - Arbre de décision
+   ### - GradientBoostingClassifier
+   ### - Random Forest
+   ### - Ridge Classifier
+   ### - Régression Logistique
+
+<p align="justify"> Et voici la démarche suivie pour cette partie concernant la modélisation : </p>  
+
+   * Application des modèles à l’échantillon test.
+   * Comparaison de la performance des modèles (Matrice de confusion, Accuracy).
+   * Interprétation de notre meilleur modèle.
+   
