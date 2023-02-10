@@ -32,4 +32,18 @@ Source des données : https://www.kaggle.com/datasets/samuelcortinhas/sports-bal
     <img width="400" src="https://user-images.githubusercontent.com/118008489/218047372-31b382ea-d828-4000-a840-8f6fadec111d.png" alt="baseball">
 </p>
 
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>  
+
+<p align="center"> Figure 2 - Image issue de la catégorie football </p>
+<p align="center">
+    <img width="400" src="https://user-images.githubusercontent.com/118008489/218063229-4beb54fa-7dd0-4562-87f5-c8b354362234.png" alt="football">
+</p>
+
+<p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
+
+<p align="center"> Figure 3 - Image issue de la catégorie rugby </p>
+<p align="center">
+    <img width="400" src="https://user-images.githubusercontent.com/118008489/218063576-44bb812e-be12-427d-9c46-0c95c37cf5b0.png" alt="rugby">
+</p>
+
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. Extrait du logiciel Python </p>
