@@ -147,7 +147,29 @@ C'est pour cette raison que nous sommes directement passé à notre étape de mo
 
 ## Modélisation sans rééchantillonage
 
-### Partie OVR 
+### - Partie OVR 
+
+ * OneVsRestClassifier (SVC)
+ * OneVsRestClassifier (LinearSVC)
+ * OneVsRestClassifier (SGDClassifier) 
 
 <p align="justify"> Stratégie multiclass/multilabel OneVSRestClassifier (OVR), également connue sous le nom de OneVSAll. Cette approche consiste à ajuster un classifieur par classe. Pour chaque classificateur, la classe est ajustée par rapport à toutes les autres classes. En plus de son efficacité de calcul (seuls les classificateurs n_classes sont nécessaires), l'un des avantages de cette approche est son interprétabilité. Étant donné que chaque classe est représentée par un et un seul classificateur, il est possible d'acquérir des connaissances sur la classe en inspectant son classificateur correspondant. Il s'agit de la stratégie la plus couramment utilisée pour la classification multiclasse et c'est un choix par défaut équitable. </p>  
    
+### - Partie OVO :
+    
+  * OneVsOneClassifier (SVC)
+  * OneVsOneClassifier (LinearSVC)
+  * OneVsOneClassifier (SGDClassifier) 
+
+<p align="justify"> OneVsOneClassifier construit un classificateur par paire de classes. Au moment de la prédiction, la classe qui a reçu le plus de votes est sélectionnée. En cas d'égalité (entre deux classes avec un nombre égal de votes), il sélectionne la classe avec la confiance de classification agrégée la plus élevée en additionnant les niveaux de confiance de classification par paire calculés par les classificateurs binaires sous-jacents. Puisqu'elle nécessite d'adapter n_classes * (n_classes - 1) / 2 classificateurs, cette méthode est généralement plus lente que OneVSRestClassifier, en raison de sa complexité O (n_classes^2). La fonction de décision est le résultat d'une transformation monotone de la classification un contre un. </p>  
+
+### - MLP avec keras
+
+<p align="justify"> En intelligence artificielle, plus précisément en apprentissage automatique, le perceptron multicouche (multilayer perceptron, MLP) est un type de réseau neuronal artificiel organisé en plusieurs couches. L'information circule de la couche d'entrée vers la couche de sortie uniquement : il s'agit donc d'un réseau à propagation directe (feedforward). Chaque couche est constituée d'un nombre variable de neurones, les neurones de la dernière couche (dite « de sortie ») étant les sorties du système global. </p>  
+
+<p align="justify"> Malheureusement nous n'avons pas réussi à obtenir quelconque résultat interprétable à l'aide de la méthode MLP avec Keras.  
+Cependant, nous avons souhaité tester d'autres modèles que ceux vus en cous. Par conséquent, nous avons décidé du choix de ces modèles à l'aide de la documentation suivante : https://scikit-learn.org/stable/modules/multiclass.html </p> 
+
+ ### - Arbre de décision
+ 
+ <p align="justify"> En intelligence artificielle, plus précisément en apprentissage automatique, le perceptron multicouche (multilayer perceptron, MLP) est un type de réseau neuronal artificiel organisé en plusieurs couches. L'information circule de la couche d'entrée vers la couche de sortie uniquement : il s'agit donc d'un réseau à propagation directe (feedforward). Chaque couche est constituée d'un nombre variable de neurones, les neurones de la dernière couche (dite « de sortie ») étant les sorties du système global. </p>  
