@@ -279,7 +279,7 @@ Chaque arbre est construit à partir d’un échantillon aléatoire avec remise 
 
 <p align="center"> Source : Gloannec A. & Pascal E. (2023). Classification d'images de balles de sports. </p>
 
-<p align="justify">  Lors d'une classification binaire ou multiclass, il est souvent commun d'utiliser des métriques telles que le F1-Score, le Recal, etc... Mais étant donné le nombre important de classes dans notre classification nous n'avons pas trouvé ces métriques comme étant les plus pertinentes afin d'interpréter la qualité de notre classification. C'est donc pour cette raison que nosu nous sommes tourné vers le critère d'Accuracy qui indique l’efficacité d’un modèle à bien prédire les différentes classes. </p> 
+<p align="justify">  Lors d'une classification binaire ou multiclass, il est souvent commun d'utiliser des métriques telles que le F1-Score, le Recal, etc... Mais étant donné le nombre important de classes dans notre classification nous n'avons pas trouvé ces métriques comme étant les plus pertinentes afin d'interpréter la qualité de notre classification. C'est donc pour cette raison que nous nous sommes tourné vers le critère d'Accuracy qui indique l’efficacité d’un modèle à bien prédire les différentes classes. </p> 
 
 <p align="center"> Tableau 4 - Nombre d'erreur réalisé pour le modèle Random Forest avant rééchantillonage comme image mal prédite pour chaque catégorie </p>
 
